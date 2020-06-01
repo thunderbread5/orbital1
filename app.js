@@ -1,7 +1,6 @@
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var count = itemList.getElementsByTagName('li').length;
-var page = false;
 
 // Form submit event
 form.addEventListener('submit', addItem);
@@ -87,10 +86,6 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
         testAPI();
-        if (page == false) {
-            window.location.href = "page.html";
-            page == true;
-        }
     } else {                                 // Not logged into your webpage or we are unable to tell.
         document.getElementById('status').innerHTML = 'Please log ' +
             'into this webpage.';
@@ -140,7 +135,5 @@ function testAPI() {                      // Testing Graph API after login.  See
 }
 
 function redirectUser() {
-    if (window.location != "https://trackyourexpirydates.netlify.app/page.html") {
-        window.location.href = "page.html";
-    }
+    document.getElementById('redirect').click;
 }
