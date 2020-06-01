@@ -139,6 +139,8 @@ function testAPI() {                      // Testing Graph API after login.  See
     });
 }
 
-function redirectUser(){
-    window.location.href = "page.html";   
+function redirectUser() {
+    if (window.location != "page.html") {
+        window.location.href = "page.html";
+    }
 }
