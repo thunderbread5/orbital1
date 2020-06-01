@@ -87,7 +87,7 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
         testAPI();
-        if (page == 1) {
+        if (page === 1) {
             window.location.href = "page.html";
             page++;
         }
