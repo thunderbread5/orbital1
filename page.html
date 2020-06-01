@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burpee - Track Your Expiry Dates</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+
+    <h1 style="background-color: rgb(223, 211, 195);">Burpee
+        <p>fast,<br>easy &<br>simple.</p>
+    </h1>
+
+
+    <div class="container">
+        <ul id="items" class="list-group">
+            <li class="list-group-item">SAMPLE ITEM expires on 30/02/2020 <button class="btn 
+                btn-danger btn-sm float-right delete">X</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="form">
+            <form class="new-item" id="addForm">
+                <p style="margin-top: 30px;">Add New Item</p>
+                <input type="text" placeholder="Item Description" id="item">
+                <br>
+                <p style="margin-top: 1em;">Expiry Date</p>
+                <input type="text" placeholder="DD" style="width: 2.6em;" id="date">
+                <input type="text" placeholder="MM" style="width: 2.6em;" id="month">
+                <input type="text" placeholder="YYYY" style="width: 3.5em; " id="year">
+                <br>
+                <input type="submit" id="submit" class="add-item" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class=" lower-background">
+    </div>
+
+    <script> src = 'https://code.jquery.com/jquery-3.2.1.min.js'
+    </script>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
