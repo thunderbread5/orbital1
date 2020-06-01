@@ -1,6 +1,7 @@
 var form = document.getElementById('addForm');
 var itemList = document.getElementById('items');
 var count = itemList.getElementsByTagName('li').length;
+var page = 1;
 
 // Form submit event
 form.addEventListener('submit', addItem);
@@ -80,16 +81,15 @@ function removeItem(e) {
 }
 
 // facebook login
-var page = false;
 
 function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
     console.log(response);                   // The current login status of the person.
     if (response.status === 'connected') {   // Logged into your webpage and Facebook.
         testAPI();
-        if (!page) {
+        if (page == 1) {
             window.location.href = "page.html";
-            page = true;
+            page++;
         }
     } else {                                 // Not logged into your webpage or we are unable to tell.
         document.getElementById('status').innerHTML = 'Please log ' +
