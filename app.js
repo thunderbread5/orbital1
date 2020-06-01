@@ -135,5 +135,5 @@ function testAPI() {                      // Testing Graph API after login.  See
 }
 
 function redirectUser() {
-    document.getElementById('redirect').click;
+    document.getElementById('redirect').click();
 }
