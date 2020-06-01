@@ -140,7 +140,7 @@ function testAPI() {                      // Testing Graph API after login.  See
 }
 
 function redirectUser() {
-    if (window.location != "page.html") {
+    if (window.location != "https://trackyourexpirydates.netlify.app/page.html") {
         window.location.href = "page.html";
     }
 }
