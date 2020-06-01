@@ -135,5 +135,10 @@ function testAPI() {                      // Testing Graph API after login.  See
         console.log('Successful login for: ' + response.name);
         document.getElementById('status').innerHTML =
             'Thanks for logging in, ' + response.name + '!';
+        redirectUser();
     });
+}
+
+function redirectUser(){
+    window.location.href = 'page.html';   
 }
