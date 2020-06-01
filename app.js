@@ -140,5 +140,5 @@ function testAPI() {                      // Testing Graph API after login.  See
 }
 
 function redirectUser(){
-    window.location.href = 'page.html';   
+    window.location.href = "page.html";   
 }
