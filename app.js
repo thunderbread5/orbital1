@@ -80,7 +80,7 @@ function removeItem(e) {
 }
 
 // facebook login
-let page = false;
+var page = false;
 
 function statusChangeCallback(response) {  // Called with the results from FB.getLoginStatus().
     console.log('statusChangeCallback');
@@ -89,6 +89,7 @@ function statusChangeCallback(response) {  // Called with the results from FB.ge
         testAPI();
         if (!page) {
             window.location.href = "page.html";
+            page = true;
         }
     } else {                                 // Not logged into your webpage or we are unable to tell.
         document.getElementById('status').innerHTML = 'Please log ' +
