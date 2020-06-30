@@ -11,14 +11,16 @@
 
 <body>
 
-    <h1 style="background-color: rgb(223, 211, 195);">Burpee
-        <p>fast,<br>easy &<br>simple.</p>
-    </h1>
+    <header>
+        <h1 style="background-color: rgb(223, 211, 195);">Burpee
+            <p>fast,<br>easy &<br>simple.</p>
+        </h1>
+    </header>
 
 
     <div class="container">
         <ul id="items" class="list-group">
-            <li class="list-group-item">SAMPLE ITEM expires on 30/02/2020 <button class="btn 
+            <li class="list-group-item"><button style="display: none;" class="btn 
                 btn-danger btn-sm float-right delete">X</button>
             </li>
         </ul>
@@ -31,22 +33,21 @@
                 <input type="text" placeholder="Item Description" id="item">
                 <br>
                 <p style="margin-top: 1em;">Expiry Date</p>
-                <input type="text" placeholder="DD" style="width: 2.6em;" id="date">
-                <input type="text" placeholder="MM" style="width: 2.6em;" id="month">
-                <input type="text" placeholder="YYYY" style="width: 3.5em; " id="year">
+                <select name="date" id="date">
+                    <option value="" selected disabled hidden>DD</option>
+                </select><select name="month" id="month" style="margin-left: 8px; margin-right: 8px;">
+                    <option value="" selected disabled hidden>MM</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="" selected disabled hidden>YYYY</option>
+                </select>
                 <br>
                 <input type="submit" id="submit" class="add-item" value="Submit">
             </form>
         </div>
     </div>
 
-    <div class=" lower-background">
-    </div>
-
-    <script> src = 'https://code.jquery.com/jquery-3.2.1.min.js'
-    </script>
-
-    <script src="app.js"></script>
+    <script src="pageapp.js"></script>
 
 
 </body>
